@@ -14,15 +14,7 @@ export default function Cart({ Carthandler }: Carttype) {
       <section className="flex justify-between items-center">
         <h1 className="text-xl font-bold">Cart</h1>
         <div className="relative w-3 h-5 cursor-pointer" onClick={Carthandler}>
-          <Image
-            src={cross}
-            alt="cross"
-            fill
-            style={{
-              objectFit: "cover",
-              objectPosition: "center",
-            }}
-          />
+          <Image src={cross} alt="cross" layout="fill" />
         </div>
       </section>
       <div className="border-t-2 mt-5 -mx-5"></div>
@@ -31,10 +23,8 @@ export default function Cart({ Carthandler }: Carttype) {
           <Image
             src={emptycart}
             alt="emptycart"
-            fill
+            layout="fill"
             style={{
-              objectFit: "cover",
-              objectPosition: "center",
               opacity: 0.3,
             }}
           />

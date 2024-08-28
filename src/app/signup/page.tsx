@@ -29,11 +29,8 @@ export default function page() {
               <Image
                 src={bd}
                 alt="BD Flag"
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                }}
+                layout="fill"
+                
                 className=""
               />
             </div>

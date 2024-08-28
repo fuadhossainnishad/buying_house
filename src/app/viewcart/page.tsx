@@ -63,11 +63,8 @@ export default function Page() {
             <Image
               src={return2}
               alt="return"
-              fill
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
+              layout="fill"
+              
             />
           </div>
           <span>Update Cart</span>
