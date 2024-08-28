@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
 
 type Coverimagetype = {
@@ -9,14 +9,20 @@ type Coverimagetype = {
   desc1: string;
 };
 
-export default function Coverimage({ src, desc1 }: { readonly src: string | StaticImageData; readonly desc1: string }) {
+export default function Coverimage({
+  src,
+  desc1,
+}: {
+  readonly src: string | StaticImageData;
+  readonly desc1: string;
+}) {
   return (
     <main className="relative w-[1000px] h-[475px]">
       <Image
         src={src}
         alt="laptop"
-        fill // Replaces layout="fill"
-        style={{ objectFit: "cover", objectPosition: "center" }} // Replaces objectFit and objectPosition
+        layout="fill"
+        
         className="rounded-2xl"
       />
       <section className="absolute  inset-0 ml-16 flex-col flex justify-center text-white">

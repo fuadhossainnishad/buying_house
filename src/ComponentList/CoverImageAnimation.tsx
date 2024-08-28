@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import laptop from '@/assets/Image/laptop.jpg'
 
@@ -26,7 +26,6 @@ const CoverImageAnimation = () => {
           src={laptop}
           alt="Cover"
           layout="fill"
-          objectFit="cover"
           className={`object-[${(i % gridSize) * 25}% ${
             Math.floor(i / gridSize) * 25
           }%]`}

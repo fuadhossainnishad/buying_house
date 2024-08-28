@@ -1,5 +1,5 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 
 type Socialicontype = {
   src: string | StaticImageData;
@@ -12,11 +12,8 @@ export default function Socialicon({ src, alt }: Socialicontype) {
       <Image
         src={src}
         alt={alt}
-        fill
-        style={{
-          objectFit: "cover",
-          objectPosition: "center",
-        }}
+        layout="fill"
+        
       />
     </main>
   );

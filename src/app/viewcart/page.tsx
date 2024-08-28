@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import return2 from "@/assets/Icon/return2.png";
 

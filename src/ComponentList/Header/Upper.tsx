@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 import fav from "@/assets/Icon/fav2.png";
@@ -71,7 +71,7 @@ export default function Upper() {
 
           <div className="border-t border-b pl-1 pr-4 py-3.5">
             <div className="relative w-4 h-4 -rotate-90 ">
-              <Image src={left} alt="left" />
+              <Image src={left} alt="left" layout="fill" />
             </div>
           </div>
           {/* Divider */}
@@ -101,7 +101,7 @@ export default function Upper() {
             <ul className="max-h-60 overflow-y-auto">
               {filteredCategories.map((category, index) => (
                 <li
-                  key={index}
+                  key={index + 1}
                   className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
                   onClick={() => handleCategorySelect(category)}
                 >
@@ -115,28 +115,12 @@ export default function Upper() {
       <section className="flex gap-4">
         <div className="flex items-center">
           <div className="relative w-8 h-8">
-            <Image
-              src={fav}
-              alt="fav"
-              fill
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
+            <Image src={fav} alt="fav" layout="fill" />
           </div>
         </div>
         <div className="flex items-center cursor-pointer" onClick={Carthandler}>
           <div className="relative w-8 h-8">
-            <Image
-              src={cart}
-              alt="cart"
-              layout="fill"
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
+            <Image src={cart} alt="cart" layout="fill" />
           </div>
           <div className="text-xs">
             <h1>Cart</h1>
@@ -148,15 +132,7 @@ export default function Upper() {
           onClick={Profilehandler}
         >
           <div className="relative w-8 h-8">
-            <Image
-              src={profile}
-              alt="profile"
-              layout="fill"
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
+            <Image src={profile} alt="profile" layout="fill" />
           </div>
           <div className="text-xs">
             <h1>Sign In</h1>

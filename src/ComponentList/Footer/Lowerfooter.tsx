@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import copyright from "@/assets/Icon/copyright.png";
 import developer from "@/assets/Icon/developer.png";
@@ -18,16 +18,7 @@ export default function Lowerfooter() {
       <section className="flex justify-between">
         <section className="flex items-center">
           <div className="relative w-4 h-4 ">
-            <Image
-              src={copyright}
-              alt="copyright"
-              fill
-              style={{
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-              className=""
-            />
+            <Image src={copyright} alt="copyright" layout="fill" className="" />
           </div>
           <h1 className="text-sm">All Rights Reserved-&gt;</h1>
           <h1 className="font-semibold">Fuad Hossain </h1>
@@ -36,15 +27,11 @@ export default function Lowerfooter() {
           <h1 className="font-semibold">Payment Options:</h1>
           <div className="grid grid-cols-4 grid-row-2 gap-1 items-center">
             {payment.map((pay, index) => (
-              <div key={index} className="relative w-12 h-8 ">
+              <div key={index} className="relative w-8 h-6 ">
                 <Image
                   src={pay}
-                  alt="cod"
-                  fill
-                  style={{
-                    objectFit: "cover",
-                    objectPosition: "center",
-                  }}
+                  alt={`${pay}`}
+                  layout="responsive"
                   className="items-center"
                 />
               </div>
@@ -53,15 +40,9 @@ export default function Lowerfooter() {
         </section>
       </section>
       <section className="flex items-center gap-1 justify-center">
-        <Image
-          src={developer}
-          alt="developer"
-          width={20}
-          style={{
-            width: "auto",
-          }}
-          className=""
-        />
+        <div className="relative h-8 w-8">
+          <Image src={developer} alt="developer" layout="fill" className="" />
+        </div>
         <div className="font-semibold text-sm">
           <h1>Fuad Hossain</h1>
           <h1>fuadhossainbk01@gmail.com</h1>

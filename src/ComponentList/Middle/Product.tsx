@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 
 import view from "@/assets/Icon/view.png";
 import compare from "@/assets/Icon/compare.png";
@@ -56,53 +56,25 @@ export default function Product({
       <section className="absolute inset-0 top-12 left-56 right-0  space-y-2  bg-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
         <div className="p-2 w-8 hover:bg-slate-300/30  rounded-3xl items-center border">
           <div className="relative w-4 h-4">
-            <Image
-              src={cart}
-              alt="cart"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-              className=""
-            />
+            <Image src={cart} alt="cart" layout="fill" className="" />
           </div>
         </div>
 
         <div className="p-2 w-8 hover:bg-slate-300/30  rounded-3xl items-center border">
           <div className="relative w-4 h-4">
-            <Image
-              src={wish}
-              alt="wish"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-              className=""
-            />
+            <Image src={wish} alt="wish" layout="fill" className="" />
           </div>
         </div>
 
         <div className="p-2 w-8 hover:bg-slate-300/30  rounded-3xl items-center border">
           <div className="relative w-4 h-4">
-            <Image
-              src={compare}
-              alt="compare"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-              className=""
-            />
+            <Image src={compare} alt="compare" layout="fill" className="" />
           </div>
         </div>
 
         <div className="p-2 w-8 hover:bg-slate-300/30  rounded-3xl items-center border">
           <div className="relative w-4 h-4">
-            <Image
-              src={view}
-              alt="view"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-              className=""
-            />
+            <Image src={view} alt="view" layout="fill" className="" />
           </div>
         </div>
       </section>
