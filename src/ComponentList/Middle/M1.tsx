@@ -3,7 +3,6 @@
 import React from 'react'
 import {useState,useEffect} from 'react'
 
-import Image from "next/legacy/image"
 import Coverimage from './Coverimage'
 import laptop from '@/assets/Image/laptop.jpg'
 import kitchen from '@/assets/Image/kitchen.jpg'

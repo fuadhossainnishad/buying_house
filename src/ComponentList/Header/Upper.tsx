@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/legacy/image";
+import Image from 'next/image';
 import Link from "next/link";
 
 import fav from "@/assets/Icon/fav2.png";

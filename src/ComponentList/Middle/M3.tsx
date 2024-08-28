@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from 'next/image';
 import Link from "next/link";
 
 import surface from "@/assets/Image/surface2.png";

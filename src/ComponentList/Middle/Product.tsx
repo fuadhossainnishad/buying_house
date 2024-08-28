@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 
 import view from "@/assets/Icon/view.png";
 import compare from "@/assets/Icon/compare.png";

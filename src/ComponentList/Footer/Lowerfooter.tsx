@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from 'next/image';
 
 import copyright from "@/assets/Icon/copyright.png";
 import developer from "@/assets/Icon/developer.png";

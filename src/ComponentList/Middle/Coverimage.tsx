@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
 
 type Coverimagetype = {

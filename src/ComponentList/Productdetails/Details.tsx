@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 
 import iphone2 from "@/assets/Image/iphone2.png";
 import iphone3 from "@/assets/Image/iphone3.png";

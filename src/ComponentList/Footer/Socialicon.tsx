@@ -1,5 +1,5 @@
 import React from "react";
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 
 type Socialicontype = {
   src: string | StaticImageData;
