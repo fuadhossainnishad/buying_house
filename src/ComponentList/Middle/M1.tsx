@@ -4,16 +4,13 @@ import React from 'react'
 import {useState,useEffect} from 'react'
 
 import Coverimage from './Coverimage'
-import laptop from '@/assets/Image/laptop.jpg'
-import kitchen from '@/assets/Image/kitchen.jpg'
-import bicycle from '@/assets/Image/bicycle.jpg'
 
 
 export default function M1() {
   const images = [
-    { src: laptop, desc: 'All Branded Laptops' },
-    { src: kitchen, desc: 'Modern Kitchens' },
-    { src: bicycle, desc: 'Bicycles for All' }
+    { src: '/assets/Image/laptop.jpg', desc: 'All Branded Laptops' },
+    { src: '/assets/Image/kitchen.jpg', desc: 'Modern Kitchens' },
+    { src: '/assets/Image/bicycle.jpg', desc: 'Bicycles for All' }
   ];
 
   const [index,setIndex]=useState(0)

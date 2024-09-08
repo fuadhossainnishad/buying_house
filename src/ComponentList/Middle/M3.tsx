@@ -2,8 +2,6 @@ import React from "react";
 import Image from 'next/image';
 import Link from "next/link";
 
-import surface from "@/assets/Image/surface2.png";
-import surface2 from "@/assets/Image/surface3.png";
 
 export default function M3() {
   return (
@@ -19,7 +17,7 @@ export default function M3() {
           </Link>
         </div>
         <div className=" relative w-60  h-[200px] ">
-          <Image src={surface} alt="surface" layout="fill" className="" />
+          <Image src="/assets/Image/surface2.png" alt="surface" layout="fill" className="" />
         </div>
       </section>
       <section className="w-[30%] rounded-2xl flex bg-gray-700 justify-evenly">
@@ -33,7 +31,7 @@ export default function M3() {
           </Link>
         </div>
         <div className=" relative w-60  h-[200px] ">
-          <Image src={surface} alt="surface" layout="fill" className="" />
+          <Image src="/assets/Image/surface2.png" alt="surface" layout="fill" className="" />
         </div>
       </section>
       <section className="w-[30%] rounded-2xl flex bg-teal-700 justify-evenly">
@@ -47,7 +45,7 @@ export default function M3() {
           </Link>
         </div>
         <div className=" relative w-60  h-[200px] ">
-          <Image src={surface} alt="surface" layout="fill" className="" />
+          <Image src="/assets/Image/surface2.png" alt="surface" layout="fill" className="" />
         </div>
       </section>
     </main>

@@ -1,9 +1,6 @@
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import Link from "next/link";
-
-import cross from "@/assets/Icon/cross.png";
-import Input from "postcss/lib/input";
 
 type Logintype = {
   Profilehandler: () => void;
@@ -17,7 +14,13 @@ export default function Login({ Profilehandler }: Logintype) {
           className="relative w-3 h-5 cursor-pointer"
           onClick={Profilehandler}
         >
-          <Image src={cross} alt="cross" layout="fill" />
+          <Image
+            src="/assets/Icon/cross.png"
+            alt="cross"
+            layout="responsive"
+            height={10}
+            width={10}
+          />
         </div>
       </section>
       <section className="flex flex-col items-center">

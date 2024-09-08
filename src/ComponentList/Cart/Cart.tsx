@@ -1,9 +1,6 @@
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import Link from "next/link";
-
-import cross from "@/assets/Icon/cross.png";
-import emptycart from "@/assets/Icon/emptycart.png";
 
 type Carttype = {
   Carthandler: () => void;
@@ -14,14 +11,20 @@ export default function Cart({ Carthandler }: Carttype) {
       <section className="flex justify-between items-center">
         <h1 className="text-xl font-bold">Cart</h1>
         <div className="relative w-3 h-5 cursor-pointer" onClick={Carthandler}>
-          <Image src={cross} alt="cross" layout="fill" />
+          <Image
+            src="/assets/Icon/cross.png"
+            alt="cross"
+            layout="responsive"
+            height={10}
+            width={10}
+          />
         </div>
       </section>
       <div className="border-t-2 mt-5 -mx-5"></div>
       <section className="flex flex-col items-center mt-[40%] space-y-4">
         <div className="relative w-20 h-20 ">
           <Image
-            src={emptycart}
+            src="/assets/Icon/emptycart.png"
             alt="emptycart"
             layout="fill"
             style={{

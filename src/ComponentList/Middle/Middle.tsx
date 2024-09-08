@@ -1,4 +1,3 @@
-import React from "react";
 
 import M1 from "./M1";
 import M2 from "./M2";

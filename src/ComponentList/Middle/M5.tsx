@@ -2,13 +2,12 @@ import React from 'react';
 import Productpromo from './Productpromo';
 import Product from './Product';
 
-import suit from '@/assets/Image/suit.jpg';
-import iphone from '@/assets/Image/iphone.png'
+ 
 export default function M5() {
     return (
         <main className='flex gap-12 justify-between'>
             <Productpromo
-                src={suit}
+                src='/assets/Image/suit.jpg'
                 alt='suit'
                 brand='Best Promotion'
                 desc1='Top Offer'
@@ -16,7 +15,7 @@ export default function M5() {
                 price='From:$499.00'
             />
             <Product
-                src={iphone}
+                src='/assets/Image/iphone.png'
                 alt='iphone'
                 brand='Apple'
                 desc1='Smartphone 14 Pro Max'
@@ -24,7 +23,7 @@ export default function M5() {
                 price='$380.00'
             />
              <Product
-                src={iphone}
+                src='/assets/Image/iphone.png'
                 alt='iphone'
                 brand='Apple'
                 desc1='Smartphone 14 Pro Max'

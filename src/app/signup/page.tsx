@@ -1,7 +1,6 @@
 import React from "react";
 import Image from 'next/image';
 
-import bd from "@/assets/Icon/bd.png"
 
 export default function page() {
   return (
@@ -27,7 +26,7 @@ export default function page() {
           <div className="flex items-center px-5">
             <div className="relative h-[20px] w-[20px] mr-2 ">
               <Image
-                src={bd}
+                src="/assets/Icon/bd.png"
                 alt="BD Flag"
                 layout="fill"
                 

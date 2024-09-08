@@ -2,9 +2,6 @@ import React from "react";
 import Image from 'next/image';
 import Link from "next/link";
 
-import menu from "@/assets/Icon/menu4.png";
-import offer from "@/assets/Icon/offer.png";
-import left from "@/assets/Icon/left.png";
 export default function Lower() {
   const navlist = ["Home", "Shop", "Products", "Contact", "Other"];
 
@@ -14,7 +11,7 @@ export default function Lower() {
         <div className="flex items-center text-lg font-semibold">
           <div className="relative h-8 w-8">
             <Image
-              src={menu}
+              src= "/assets/Icon/menu4.png"
               alt="menu"
               layout="fill"
               
@@ -40,7 +37,7 @@ export default function Lower() {
             <div className="flex items-center gap-2">
               <h1>{nav}</h1>
               <div className="relative h-5 w-5 -rotate-90">
-                <Image src={left} alt="left" layout="fill" className="" />
+                <Image src= "/assets/Icon/left.png" alt="left" layout="fill" className="" />
               </div>
             </div>
           </Link>
@@ -49,7 +46,7 @@ export default function Lower() {
       <section className="flex items-center">
         <div className="relative h-8 w-8 -rotate-90">
           <Image
-            src={offer}
+            src= "/assets/Icon/offer.png"
             alt="offer"
             layout="fill"
            

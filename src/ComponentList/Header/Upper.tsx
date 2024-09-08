@@ -1,13 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import Link from "next/link";
 
-import fav from "@/assets/Icon/fav2.png";
-import cart from "@/assets/Icon/cart2.png";
-import profile from "@/assets/Icon/profile3.png";
-import left from "@/assets/Icon/left.png";
 import Cart from "../Cart/Cart";
 import Login from "../Login";
 
@@ -71,7 +67,7 @@ export default function Upper() {
 
           <div className="border-t border-b pl-1 pr-4 py-3.5">
             <div className="relative w-4 h-4 -rotate-90 ">
-              <Image src={left} alt="left" layout="fill" />
+              <Image src="/assets/Icon/left.png" alt="left" layout="fill" />
             </div>
           </div>
           {/* Divider */}
@@ -115,12 +111,12 @@ export default function Upper() {
       <section className="flex gap-4">
         <div className="flex items-center">
           <div className="relative w-8 h-8">
-            <Image src={fav} alt="fav" layout="fill" />
+            <Image src="/assets/Icon/fav2.png" alt="fav" layout="fill" />
           </div>
         </div>
         <div className="flex items-center cursor-pointer" onClick={Carthandler}>
           <div className="relative w-8 h-8">
-            <Image src={cart} alt="cart" layout="fill" />
+            <Image src="/assets/Icon/cart2.png" alt="cart" layout="fill" />
           </div>
           <div className="text-xs">
             <h1>Cart</h1>
@@ -132,7 +128,11 @@ export default function Upper() {
           onClick={Profilehandler}
         >
           <div className="relative w-8 h-8">
-            <Image src={profile} alt="profile" layout="fill" />
+            <Image
+              src="/assets/Icon/profile3.png"
+              alt="profile"
+              layout="fill"
+            />
           </div>
           <div className="text-xs">
             <h1>Sign In</h1>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from 'next/image';
 
-import return2 from "@/assets/Icon/return2.png";
+
 
 const cartarray = [
   {
@@ -61,9 +61,11 @@ export default function Page() {
         <div className="flex items-center gap-1 border-2 rounded-3xl py-2 px-8 text-sm font-semibold bg-slate-300 cursor-pointer">
           <div className="relative w-4 h-4">
             <Image
-              src={return2}
+              src="/assets/Icon/return2.png"
               alt="return"
-              layout="fill"
+              layout="responsive"
+              height={10}
+              width={10}
               
             />
           </div>
