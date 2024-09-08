@@ -11,7 +11,7 @@ const CoverImageAnimation = () => {
     squares.push(
       <motion.div
         key={i}
-        className="w-full h-full"
+        className="w-full h-full "
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -23,7 +23,10 @@ const CoverImageAnimation = () => {
         <Image
           src="/assets/Image/laptop.jpg"
           alt="Cover"
-          layout="fill"
+          layout="responsive"
+          priority
+          width={10}
+          height={10}
           className={`object-[${(i % gridSize) * 25}% ${
             Math.floor(i / gridSize) * 25
           }%]`}

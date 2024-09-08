@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
-
 type Productype = {
   src: string | StaticImageData;
   alt: string;
@@ -29,9 +28,10 @@ export default function Product({
               <Image
                 src={src}
                 alt={alt}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
+                layout="responsive"
+                priority
+                width={10}
+                height={10}
                 className=""
               />
             </div>
@@ -55,7 +55,10 @@ export default function Product({
             <Image
               src="/assets/Icon/cart.png"
               alt="cart"
-              layout="fill"
+              layout="responsive"
+              priority
+              width={10}
+              height={10}
               className=""
             />
           </div>
@@ -66,7 +69,10 @@ export default function Product({
             <Image
               src="/assets/Icon/wish.png"
               alt="wish"
-              layout="fill"
+              layout="responsive"
+              priority
+              width={10}
+              height={10}
               className=""
             />
           </div>
@@ -77,7 +83,10 @@ export default function Product({
             <Image
               src="/assets/Icon/compare.png"
               alt="compare"
-              layout="fill"
+              layout="responsive"
+              priority
+              width={10}
+              height={10}
               className=""
             />
           </div>
@@ -88,7 +97,10 @@ export default function Product({
             <Image
               src="/assets/Icon/view.png"
               alt="view"
-              layout="fill"
+              layout="responsive"
+              priority
+              width={10}
+              height={10}
               className=""
             />
           </div>

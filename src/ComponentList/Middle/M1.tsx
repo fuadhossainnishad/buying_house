@@ -24,7 +24,7 @@ return ()=> clearInterval(interval)
   },[images.length])
 
   return (
-    <main className='relative w-[1100px] h-[475px]'>
+    <main className='w-[1100px] h-[47px]'>
       <Coverimage
       key={index}
       src={images[index].src}

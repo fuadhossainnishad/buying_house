@@ -10,7 +10,10 @@ export default function Upperfooter() {
             <Image
               src="/assets/Icon/delivery.png"
               alt="left"
-              layout="fill"
+              layout="responsive"
+              priority
+              height={10}
+              width={10}
               className=""
             />
           </div>
@@ -26,7 +29,10 @@ export default function Upperfooter() {
             <Image
               src="/assets/Icon/payment.png"
               alt="payment"
-              layout="fill"
+              layout="responsive"
+              priority
+              height={10}
+              width={10}
               className=""
             />
           </div>
@@ -42,7 +48,10 @@ export default function Upperfooter() {
             <Image
               src="/assets/Icon/return.png"
               alt="ret"
-              layout="fill"
+              layout="responsive"
+              priority
+              height={10}
+              width={10}
               className=""
             />
           </div>
@@ -58,7 +67,10 @@ export default function Upperfooter() {
             <Image
               src="/assets/Icon/help.png"
               alt="help"
-              layout="fill"
+              layout="responsive"
+              priority
+              height={10}
+              width={10}
               className=""
             />
           </div>

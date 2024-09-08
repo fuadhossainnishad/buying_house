@@ -12,8 +12,10 @@ export default function Socialicon({ src, alt }: Socialicontype) {
       <Image
         src={src}
         alt={alt}
-        layout="fill"
-        
+        layout="responsive"
+        priority
+        height={10}
+        width={10}
       />
     </main>
   );

@@ -22,7 +22,15 @@ export default function Productpromo({
   return (
     <main className="font-semibold">
       <div className="relative w-[610px] h-[388px] ">
-        <Image src={src} alt={alt} layout="fill" className="rounded-xl" />
+        <Image
+          src={src}
+          alt={alt}
+          layout="responsive"
+          priority
+          width={10}
+          height={10}
+          className="rounded-xl"
+        />
         <section className="absolute bg-slate-900/40 p-8 pt-[px] left-14  z-10">
           <div className="space-y-4">
             <h1 className="text-sm ">{brand} </h1>

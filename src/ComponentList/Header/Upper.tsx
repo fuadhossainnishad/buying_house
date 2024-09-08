@@ -131,7 +131,10 @@ export default function Upper() {
             <Image
               src="/assets/Icon/profile3.png"
               alt="profile"
-              layout="fill"
+              layout="responsive"
+              priority
+              height={10}
+              width={10}
             />
           </div>
           <div className="text-xs">

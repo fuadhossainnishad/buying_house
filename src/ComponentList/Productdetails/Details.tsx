@@ -38,7 +38,14 @@ export default function Details() {
             }`}
             onClick={() => handleselectimage(image)}
           >
-            <Image src={image} alt="alt" layout="responsive" />
+            <Image
+              src={image}
+              alt="alt"
+              layout="responsive"
+              priority
+              width={10}
+              height={10}
+            />
           </div>
         ))}
       </section>
@@ -52,12 +59,20 @@ export default function Details() {
             className="hover:bg-slate-400 rounded-full"
             alt="alt"
             layout="responsive"
+            priority
             height={10}
             width={10}
           />
         </div>
         <div className="relative w-[400px] h-[600px] rounded-3xl hover:border-2 hover:border-rose-300">
-          <Image src={selectimage} alt="alt" layout="fill" />
+          <Image
+            src={selectimage}
+            alt="alt"
+            layout="responsive"
+            priority
+            width={10}
+            height={10}
+          />
         </div>
         <div
           className="relative w-12 h-12 cursor-pointer"
@@ -68,6 +83,7 @@ export default function Details() {
             className="hover:bg-slate-400 rounded-full"
             alt="alt"
             layout="responsive"
+            priority
             height={10}
             width={10}
           />

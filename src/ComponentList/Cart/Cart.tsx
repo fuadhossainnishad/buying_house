@@ -7,7 +7,7 @@ type Carttype = {
 };
 export default function Cart({ Carthandler }: Carttype) {
   return (
-    <main className="bg-white fixed top-20 right-0 w-[25%] h-screen p-5 border-2 rounded-2xl">
+    <main className="bg-white fixed top-20 right-0 z-10 w-[25%] h-screen p-5 border-2 rounded-2xl">
       <section className="flex justify-between items-center">
         <h1 className="text-xl font-bold">Cart</h1>
         <div className="relative w-3 h-5 cursor-pointer" onClick={Carthandler}>
@@ -15,6 +15,7 @@ export default function Cart({ Carthandler }: Carttype) {
             src="/assets/Icon/cross.png"
             alt="cross"
             layout="responsive"
+            priority
             height={10}
             width={10}
           />
@@ -26,7 +27,10 @@ export default function Cart({ Carthandler }: Carttype) {
           <Image
             src="/assets/Icon/emptycart.png"
             alt="emptycart"
-            layout="fill"
+            layout="responsive"
+            priority
+            height={10}
+            width={10}
             style={{
               opacity: 0.3,
             }}

@@ -20,6 +20,7 @@ export default function Lowerfooter() {
               src="/assets/Icon/copyright.png"
               alt="copyright"
               layout="responsive"
+              priority
               height={10}
               width={10}
               className=""
@@ -37,6 +38,7 @@ export default function Lowerfooter() {
                   src={pay}
                   alt={`${pay}`}
                   layout="responsive"
+                  priority
                   height={10}
                   width={10}
                   className="items-center"
@@ -52,6 +54,7 @@ export default function Lowerfooter() {
             src="/assets/Icon/developer.png"
             alt="developer"
             layout="responsive"
+            priority
             height={10}
             width={10}
             className=""

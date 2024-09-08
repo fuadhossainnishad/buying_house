@@ -22,7 +22,7 @@ export default function Coverimage({
         src={src}
         alt="laptop"
         layout="fill"
-        
+        priority
         className="rounded-2xl"
       />
       <section className="absolute  inset-0 ml-16 flex-col flex justify-center text-white">
