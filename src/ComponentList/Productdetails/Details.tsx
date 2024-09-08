@@ -3,18 +3,16 @@
 import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 
-import iphone2 from "@/assets/Image/iphone2.png";
-import iphone3 from "@/assets/Image/iphone3.png";
-import iphone4 from "@/assets/Image/iphone4.png";
-import iphone5 from "@/assets/Image/iphone5.png";
-
-import rightarrow from "@/assets/Icon/rightarrow.png";
-
 export default function Details() {
-  const images: StaticImageData[] = [iphone2, iphone3, iphone4, iphone5];
-  const [selectimage, setSelectimage] = useState<StaticImageData>(images[0]);
+  const images: string[] = [
+    "/assets/Image/iphone2.png",
+    "/assets/Image/iphone3.png",
+    "/assets/Image/iphone4.png",
+    "/assets/Image/iphone5.png",
+  ];
+  const [selectimage, setSelectimage] = useState<string>(images[0]);
 
-  const handleselectimage = (image: StaticImageData) => {
+  const handleselectimage = (image: string) => {
     setSelectimage(image);
   };
   const handleprevimage = () => {
@@ -50,10 +48,12 @@ export default function Details() {
           onClick={handleprevimage}
         >
           <Image
-            src={rightarrow}
+            src="/assets/Icon/rightarrow.png"
             className="hover:bg-slate-400 rounded-full"
             alt="alt"
-            layout="fill"
+            layout="responsive"
+            height={10}
+            width={10}
           />
         </div>
         <div className="relative w-[400px] h-[600px] rounded-3xl hover:border-2 hover:border-rose-300">
@@ -64,10 +64,12 @@ export default function Details() {
           onClick={handlenextimage}
         >
           <Image
-            src={rightarrow}
+            src="/assets/Icon/rightarrow.png"
             className="hover:bg-slate-400 rounded-full"
             alt="alt"
-            layout="fill"
+            layout="responsive"
+            height={10}
+            width={10}
           />
         </div>
       </section>

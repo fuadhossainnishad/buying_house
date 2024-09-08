@@ -16,7 +16,7 @@
   }
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -42,8 +42,6 @@ html{
   transform: translateY(10px);
   transition: opacity 300ms ease-out, transform 300ms ease-out;
 }
-
-
 
 body {
   color: rgb(var(--foreground-rgb));

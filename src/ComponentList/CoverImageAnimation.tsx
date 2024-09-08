@@ -1,9 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from 'next/image';
-
-import laptop from '@/assets/Image/laptop.jpg'
+import Image from "next/image";
 
 const CoverImageAnimation = () => {
   const gridSize = 4; // Define the grid size
@@ -23,7 +21,7 @@ const CoverImageAnimation = () => {
         }}
       >
         <Image
-          src={laptop}
+          src="/assets/Image/laptop.jpg"
           alt="Cover"
           layout="fill"
           className={`object-[${(i % gridSize) * 25}% ${
