@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2020" /* Use ECMAScript 2020 for the generated JavaScript. */,
+    "lib": ["ES2020"] /* Include the ECMAScript standard library for 2020. */,
+    "module": "commonjs" /* Use CommonJS module system, typical for Node.js environments. */,
+    "moduleResolution": "node" /* Use Node.js resolution algorithm for imports. */,
+    "resolveJsonModule": true /* Enable importing .json files directly. */,
+    "esModuleInterop": true /* Enable interop with CommonJS modules. */,
+    "forceConsistentCasingInFileNames": true /* Ensure case-sensitive imports are handled correctly. */,
+
+    /* Emit */
+    "declaration": true /* Generate .d.ts files for TypeScript types. */,
+    "outDir": "./dist" /* Specify the output directory for compiled files. */,
+    "removeComments": true /* Remove comments in the emitted JavaScript files. */,
+    "sourceMap": true /* Generate source maps for debugging. */,
+
+    /* Type Checking */
+    "strict": true /* Enable strict type checking for improved code quality. */,
+    "skipLibCheck": true /* Skip type checking .d.ts files from dependencies to speed up compilation. */,
+    "noImplicitAny": true /* Raise error on expressions with an implied 'any' type. */,
+    "strictNullChecks": true /* Ensure that 'null' and 'undefined' are considered distinct types. */,
+    "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
+    "alwaysStrict": true /* Always emit 'use strict' in the output files. */,
+
+    /* Modules */
+    "baseUrl": "." /* Set the base directory to resolve non-relative imports. */,
+    "paths": {
+      /* Define custom module path aliases. */ "@src/*": ["src/*"]
+    },
+
+    /* JavaScript Support */
+    "allowJs": true /* Allow JavaScript files to be compiled. */,
+    "checkJs": false /* Disable type-checking for JavaScript files. */,
+
+    /* Other Options */
+    "incremental": true /* Enable incremental compilation for faster builds. */,
+    "noEmitOnError": true /* Do not emit output files if any errors are reported. */
+  },
+  "include": [
+    "src/**/*"
+  ] /* Include the source files directory for compilation. */,
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] /* Exclude unnecessary directories from compilation. */
+}
